@@ -15,6 +15,9 @@
 		8E5109C31B4B4A9800B78BF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5109C21B4B4A9800B78BF9 /* Images.xcassets */; };
 		8E5109C61B4B4A9800B78BF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E5109C41B4B4A9800B78BF9 /* LaunchScreen.xib */; };
 		8E5109D21B4B4A9800B78BF9 /* seemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5109D11B4B4A9800B78BF9 /* seemeTests.m */; };
+		8E55C1DD1B548056006F5DD7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E55C1DC1B548056006F5DD7 /* FBSDKCoreKit.framework */; };
+		8E55C1DF1B5483F7006F5DD7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E55C1DE1B5483F7006F5DD7 /* FBSDKShareKit.framework */; };
+		8E55C1F11B55D256006F5DD7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E55C1F01B55D256006F5DD7 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,10 @@
 		8E5109CB1B4B4A9800B78BF9 /* seemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5109D01B4B4A9800B78BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E5109D11B4B4A9800B78BF9 /* seemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seemeTests.m; sourceTree = "<group>"; };
+		8E55C1DC1B548056006F5DD7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8E55C1DE1B5483F7006F5DD7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		8E55C1EF1B55D256006F5DD7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8E55C1F01B55D256006F5DD7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E55C1DF1B5483F7006F5DD7 /* FBSDKShareKit.framework in Frameworks */,
+				8E55C1DD1B548056006F5DD7 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +92,15 @@
 		8E5109B11B4B4A9800B78BF9 /* seeme */ = {
 			isa = PBXGroup;
 			children = (
+				8E55C1DE1B5483F7006F5DD7 /* FBSDKShareKit.framework */,
 				8E5109B61B4B4A9800B78BF9 /* AppDelegate.h */,
+				8E55C1DC1B548056006F5DD7 /* FBSDKCoreKit.framework */,
 				8E5109B71B4B4A9800B78BF9 /* AppDelegate.m */,
 				8E5109BC1B4B4A9800B78BF9 /* ViewController.h */,
 				8E5109BD1B4B4A9800B78BF9 /* ViewController.m */,
 				8E5109BF1B4B4A9800B78BF9 /* Main.storyboard */,
+				8E55C1EF1B55D256006F5DD7 /* SecondViewController.h */,
+				8E55C1F01B55D256006F5DD7 /* SecondViewController.m */,
 				8E5109C21B4B4A9800B78BF9 /* Images.xcassets */,
 				8E5109C41B4B4A9800B78BF9 /* LaunchScreen.xib */,
 				8E5109B91B4B4A9800B78BF9 /* seeme.xcdatamodeld */,
@@ -171,6 +184,7 @@
 				TargetAttributes = {
 					8E5109AE1B4B4A9800B78BF9 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = L3G9LCNM63;
 					};
 					8E5109CA1B4B4A9800B78BF9 = {
 						CreatedOnToolsVersion = 6.3;
@@ -222,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E55C1F11B55D256006F5DD7 /* SecondViewController.m in Sources */,
 				8E5109B81B4B4A9800B78BF9 /* AppDelegate.m in Sources */,
 				8E5109BB1B4B4A9800B78BF9 /* seeme.xcdatamodeld in Sources */,
 				8E5109BE1B4B4A9800B78BF9 /* ViewController.m in Sources */,
@@ -351,9 +366,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexandercruz/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = seeme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -361,9 +383,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alexandercruz/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = seeme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -420,6 +449,7 @@
 				8E5109D71B4B4A9800B78BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E5109D81B4B4A9800B78BF9 /* Build configuration list for PBXNativeTarget "seemeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +458,7 @@
 				8E5109DA1B4B4A9800B78BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

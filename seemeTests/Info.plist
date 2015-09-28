@@ -10,8 +10,19 @@
 	<string>Spider.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>FacebookAppID</key>
+	<string>886050861444560</string>
+	<key>FacebookDisplayName</key>
+	<string>Alex Knows</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>fb886050861444560</string>
+		</dict>
+	</array>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
